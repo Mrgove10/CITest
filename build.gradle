@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'application'
+	id 'jacoco'
+}
+
+application.mainClassName = 'io.example.Main'
+jacoco.toolVersion = '0.8.5'
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+jar {
+	manifest.attributes('Main-Class': application.mainClassName)
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+test {
+	useJUnitPlatform()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.5.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.5.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.5.2'
+}
