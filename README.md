@@ -2,6 +2,10 @@
 
 [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
-github : https://github.com/Mrgove10/CITest
+![Java CI](https://github.com/Mrgove10/CITest/workflows/Java%20CI/badge.svg) 
 
-gitlab  : https://gitlab.com/Mrgove10/citest
+
+[![pipeline status](https://gitlab.com/Mrgove10/citest/badges/master/pipeline.svg)](https://gitlab.com/Mrgove10/citest/-/commits/master)
+
+[![coverage report](https://gitlab.com/Mrgove10/citest/badges/master/coverage.svg)](https://gitlab.com/Mrgove10/citest/-/commits/master)
+
