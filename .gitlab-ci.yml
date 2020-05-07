@@ -10,15 +10,15 @@ before_script:
 #  - echo "$CI_BUILD_NAME, $CI_BUILD_REF_NAME $CI_BUILD_STAGE" # debug
   - export GRADLE_USER_HOME=`pwd`/.gradle
 
-cache:
-  paths:
-    - .gradle/wrapper
-    - .gradle/caches
+#cache:
+#  paths:
+#    - .gradle/wrapper
+#    - .gradle/caches
 
 build:
   stage: build
   script:
-    - ./gradlew assemble
+    - ./gradlew build
   artifacts:
     paths:
       - build/libs/*.jar
@@ -31,10 +31,10 @@ test:
   script:
     - ./gradlew check
 
-deploy:
-  stage: deploy
-  script:
-    - ./deploy
+#deploy:
+#  stage: deploy
+#  script:
+#    - ./deploy
 
 after_script:
   - echo "End CI"

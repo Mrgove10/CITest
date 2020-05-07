@@ -23,12 +23,15 @@ jobs:
 
       - name: Make gradlew executable
         run: chmod +x ./gradlew
-        
+
       - name: Build with Gradle
         run: ./gradlew build
+
+      - name: test the appa
+        run: ./gradlew check
 
       - name: Artifact creation
         uses: actions/upload-artifact@v1
         with:
           name: Build Artifact
-          path: .
+          path: /build/libs
