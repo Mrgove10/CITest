@@ -2,10 +2,8 @@
 
 [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
-![Java CI](https://github.com/Mrgove10/CITest/workflows/Java%20CI/badge.svg) 
+![Java CI](https://github.com/Mrgove10/CITest/workflows/Java%20CI/badge.svg)
 
+![pipeline status](https://gitlab.com/Mrgove10/citest/badges/master/pipeline.svg)
 
-[![pipeline status](https://gitlab.com/Mrgove10/citest/badges/master/pipeline.svg)](https://gitlab.com/Mrgove10/citest/-/commits/master)
-
-[![coverage report](https://gitlab.com/Mrgove10/citest/badges/master/coverage.svg)](https://gitlab.com/Mrgove10/citest/-/commits/master)
-
+![coverage report](https://gitlab.com/Mrgove10/citest/badges/master/coverage.svg)
