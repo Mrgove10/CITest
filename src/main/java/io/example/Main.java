@@ -19,7 +19,6 @@ public class Main {
         try (Scanner sc = new Scanner(System.in)) {
             return sc.next();
         }
-        stupid error
     }
     
     public void printHello(String name) {
