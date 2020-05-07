@@ -11,12 +11,6 @@ before_script:
   - export GRADLE_USER_HOME=`pwd`/.gradle
   - chmod +x gradlew
 
-
-#cache:
-#  paths:
-#    - .gradle/wrapper
-#    - .gradle/caches
-
 build:
   stage: build
 
@@ -33,11 +27,6 @@ test:
   stage: test
   script:
     - ./gradlew check
-
-#deploy:
-#  stage: deploy
-#  script:
-#    - ./deploy
 
 after_script:
   - echo "End CI"
