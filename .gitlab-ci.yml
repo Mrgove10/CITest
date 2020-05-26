@@ -31,7 +31,6 @@ test:
     reports:   
       junit: build/test-results/test/TEST-*.xml
 
-coverage:
   stage: coverage
   script:
     - ./gradlew jacocoTestReport
