@@ -31,6 +31,14 @@ test:
     reports:   
       junit: build/test-results/test/TEST-*.xml
 
+coverage:
+  stage: coverage
+  script:
+    - ./gradlew jacocoTestReport
+  artifacts:    
+    paths:     
+      - build/reports/jacoco/test/html
+
 
 after_script:
   - echo "End CI"
