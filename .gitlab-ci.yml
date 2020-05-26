@@ -27,16 +27,13 @@ test:
   stage: test
   script:
     - ./gradlew check
+    - ./gradlew jacocoTestReport
   artifacts:      
     reports:   
       junit: build/test-results/test/TEST-*.xml
-
-  script:
-    - ./gradlew jacocoTestReport
-  artifacts:    
     paths:     
       - build/reports/jacoco/test/html
-
+    expire_in: 1 week
 
 after_script:
   - echo "End CI"
